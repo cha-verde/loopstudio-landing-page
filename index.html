@@ -30,89 +30,145 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="header">
-      <img src="./images/desktop/image-hero.jpg" />
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Careers</a>
-          </li>
-          <li>
-            <a href="#">Events</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="quote">Immersive experiences that deliver</div>
-    </div>
+  <body class="font-main text-color-main">
+    <header>
+      <img src="./images/desktop/image-hero.jpg" alt="" />
+      <div class="main">
+        <nav class="flex-row align-center justify-space-between">
+          <img src="./images/logo.svg" class="logo-sizing-main" alt="" />
+          <ul class="flex-row navigation-links">
+            <li>
+              <a href="" class="text-color-main">About</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Careers</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Events</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Products</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="quote font-second font-weight-300">IMMERSIVE EXPERIENCES THAT DELIVER</div>
+      </div>
+    </header>
 
-    <div class="feature">
+    <div class="feature padding-horizontal-two padding-top-two">
       <img src="./images/desktop/image-interactive.jpg" />
-      <div class="text">
-        <h2>The leader in interactive VR</h2>
-        <span>
+      <div class="text text-color-second flow">
+        <h2 class="font-second font-weight-300 font-size-medium">THE LEADER IN INTERACTIVE VR</h2>
+        <div class="text-color-third">
           Founded in 2011, Loopstudios has been producing world-class virtual
           reality projects for some of the best companies around the globe. Our
           award-winning creations have transformed businesses through digital
           experiences that bind to their brand.
-        </span>
+        </div>
       </div>
     </div>
     <div class="cards">
-      <h1>Our creations</h1>
-      <button>See all</button>
-      <div class="cards__items">
-        <div class="item">Deep earth</div>
-        <div class="item">Night arcade</div>
-        <div class="item">Soccer team VR</div>
-        <div class="item">The grid</div>
-        <div class="item">From up above VR</div>
-        <div class="item">Pocket borealis</div>
-        <div class="item">The curiosity</div>
-        <div class="item">Make it fisheye</div>
+      <div class="cards__header text-color-second flex-row padding-horizontal-two padding-top-two justify-space-between">
+        <h1>OUR CREATIONS</h1>
+        <button class="font-second font-weight-300 font-size-small">SEE ALL</button>
+      </div>
+      <div class="cards__container grid padding-horizontal-two padding-top-one">
+        <div class="card">
+          <a href="#" class="">
+            <img src="" alt="" file="image-deep-earth">
+            <div class="card__title">DEEP EARTH</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-night-arcade">
+              <div class="card__title">NIGHT ARCADE</div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-soccer-team">
+              <div class="card__title">SOCCER TEAM VR</div>
+            </img>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-grid">
+              <div class="card__title">THE GRID</div>
+            </img>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-from-above">
+              <div class="card__title">FROM UP ABOVE VR</div>
+            </img>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-pocket-borealis">
+              <div class="card__title">POCKET BOREALIS</div>
+            </img>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-curiosity">
+              <div class="card__title">THE CURIOSITY</div>
+            </img>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#">
+            <img src="" alt="" file="image-fisheye">
+              <div class="card__title">MAKE IT FISHEYE</div>
+            </img>
+          </a>
+        </div>
       </div>
     </div>
-    <footer>
-      <img src="./images/logo.svg" />
-      <button><img src="./images/icon-facebook.svg" alt="" /></button>
-      <button><img src="./images/icon-twitter.svg" alt="" /></button>
-      <button><img src="./images/icon-pinterest.svg" alt="" /></button>
-      <button><img src="./images/icon-instagram.svg" alt="" /></button>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Careers</a>
-          </li>
-          <li>
-            <a href="#">Events</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
-          </li>
-        </ul>
-      </nav>
-      <span> 2021 Loopstudios. All rights reserved. </span>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+    <footer class="padding-horizontal-two padding-top-one margin-top-two">
+      <div class="top flex-row justify-space-between align-center">
+        <img src="./images/logo.svg" class="logo-sizing-main" alt="" />
+        <div class="socials">
+          <button><img src="./images/icon-facebook.svg" alt="" /></button>
+          <button><img src="./images/icon-twitter.svg" alt="" /></button>
+          <button><img src="./images/icon-pinterest.svg" alt="" /></button>
+          <button><img src="./images/icon-instagram.svg" alt="" /></button>
+        </div>
+      </div>
+      <div class="bottom flex-row justify-space-between align-center">
+          <ul class="flex-row navigation-links">
+            <li>
+              <a href="" class="text-color-main">About</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Careers</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Events</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Products</a>
+            </li>
+            <li>
+              <a href="" class="text-color-main">Support</a>
+            </li>
+          </ul>
+        <span> 2021 Loopstudios. All rights reserved. </span>
       </div>
     </footer>
+    <div class="attribution flex-row align-center justify-center padding-top-half">
+      <p>Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        > Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/cha-verde" target="_blank"> cha-verde</a>.</p>
+    </div>
   </body>
+  <script src="./script.js"></script>
 </html>

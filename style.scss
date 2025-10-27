@@ -1,0 +1,75 @@
+@use "composition";
+@use "utility";
+@use "block";
+
+:root {
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-200: hsl(0, 0%, 85%);
+
+  --color-main: var(--color-white);
+  --color-second: var(--color-black);
+  --color-third: var(--color-grey-200);
+
+  --font-main: "Alata", Arial, Helvetica, sans-serif;
+  --font-second: "Josefin Sans", Arial, Helvetica, sans-serif;
+
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+
+  --font-size-small: 1rem;
+  --font-size-medium: 2rem;
+  --font-size-large: 3rem;
+
+  --font-size-1: 1rem;
+  --font-size-2: 1.5rem;
+
+  --flow-space: 1.5rem;
+
+  --padding-horizontal-one: 0 3rem 0 3rem;
+  --padding-horizontal-two: 0 6rem 0 6rem;
+  --padding-horizontal-three: 0 9rem 0 9rem;
+
+  --padding-top-half: 1.5rem;
+  --padding-top-one: 3rem;
+  --padding-top-two: 6rem;
+  --padding-top-three: 9rem;
+
+  --margin-top-one: 3rem;
+  --margin-top-two: 6rem;
+  --margin-top-three: 9rem;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,102 @@
+.font-main{
+    font-family: var(--font-main);
+}
+
+.font-second{
+    font-family: var(--font-second);
+}
+
+.font-weight-300{
+    font-weight: var(--font-weight-300);
+}
+
+.font-weight-400{
+    font-weight: var(--font-weight-400);
+}
+
+.font-size-small{
+    font-size: var(--font-size-small);
+}
+
+
+.font-size-medium{
+    font-size: var(--font-size-medium);
+}
+
+.font-size-large{
+    font-size: var(--font-size-large);
+}
+
+.text-color-main{
+    color: var(--color-main);
+}
+
+.text-color-second{
+    color: var(--color-second);
+}
+
+.text-color-third{
+    color: var(--color-third);
+}
+
+.padding-horizontal-one{
+    padding: var(--padding-horizontal-one);
+}
+
+.padding-horizontal-two{
+    padding: var(--padding-horizontal-two);
+}
+
+.padding-horizontal-three{
+    padding: var(--padding-horizontal-three);
+}
+
+.padding-top-half{
+    padding-top: var(--padding-top-half);
+}
+
+.padding-top-one{
+    padding-top: var(--padding-top-one);
+}
+
+.padding-top-two{
+    padding-top: var(--padding-top-two);
+}
+
+.padding-top-three{
+    padding-top: var(--padding-top-three);
+}
+
+.margin-top-one{
+    margin-top: var(--margin-top-one);
+}
+
+.navigation-links{
+    padding: 0;
+    gap: 20px;
+}
+
+.margin-top-two{
+    margin-top: var(--margin-top-two);
+}
+
+.margin-top-three{
+    margin-top: var(--margin-top-three);
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.logo-sizing-main{
+    width: 10rem;
+    height: 100%;
+}
