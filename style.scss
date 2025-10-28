@@ -1,6 +1,8 @@
 @use "composition";
 @use "utility";
 @use "block";
+@use "exception";
+
 
 :root {
   --color-black: hsl(0, 0%, 0%);
