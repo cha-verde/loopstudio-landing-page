@@ -159,6 +159,7 @@ body {
   background-color: black;
 }
 .mobile__links div {
+  font-size: 3rem;
   padding: 2rem;
 }
 
