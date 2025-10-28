@@ -115,7 +115,7 @@ function changeHeader(media){
     }
 }
 
-const media = window.matchMedia("(width < 850px)")
+const media = window.matchMedia("(max-width: 850px)")
 
 media.addEventListener("change", () => {
     changeHeader(media);
