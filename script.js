@@ -3,7 +3,8 @@ const header = document.querySelector("header")
 const navigationHamburger = document.querySelector(".navigation-hamburger")
 const navigationMobile = document.querySelector(".mobile")
 const closeNavigationMobile = document.querySelector(".mobile__close")
-const headerHero = document.querySelector(".hero__mobile")
+const headerHeroMobile = document.querySelector(".hero__mobile")
+const headerHeroDesktop = document.querySelector(".header__hero")
 const mobileLinks = document.querySelector(".mobile__links")
 
 
@@ -39,17 +40,6 @@ const desktopImages = [
     "./images/desktop/cards/image-soccer-team.jpg"
 ]
 
-card.forEach(element => {
-    const a = element.querySelector("a");
-    const img = a.querySelector("img");
-    const name = img.getAttribute("file");      
-    desktopImages.forEach(i => {
-        if(i.includes(name)){
-            img.src = i;  
-        }
-    })
-});
-
 const mobileImages = [
     "./images/mobile/cards/image-curiosity.jpg",
     "./images/mobile/cards/image-deep-earth.jpg",
@@ -60,6 +50,40 @@ const mobileImages = [
     "./images/mobile/cards/image-pocket-borealis.jpg",
     "./images/mobile/cards/image-soccer-team.jpg"
 ]
+
+
+
+if(window.screen.width < "850px"){
+    console.log(window.screen.width);
+    card.forEach(element => {
+        const a = element.querySelector("a");
+        const img = a.querySelector("img");
+        const name = img.getAttribute("file");      
+        mobileImages.forEach(i => {
+            if(i.includes(name)){
+                img.src = i;  
+            }
+        })
+    });
+
+}
+
+else{
+
+    card.forEach(element => {
+        const a = element.querySelector("a");
+        const img = a.querySelector("img");
+        const name = img.getAttribute("file");      
+        desktopImages.forEach(i => {
+            if(i.includes(name)){
+                img.src = i;  
+            }
+        })
+    });
+
+}
+
+
 
 
 function changeHeader(media){
@@ -91,7 +115,7 @@ function changeHeader(media){
     }
 }
 
-const media = window.matchMedia("(width < 800px)")
+const media = window.matchMedia("(width < 850px)")
 
 media.addEventListener("change", () => {
     changeHeader(media);
